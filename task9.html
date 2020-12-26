@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task 8</title>
+</head>
+<body>
+	<p id="result"></p>
+	<button onclick="location.reload()">Run Again</button>
+</body>
+<script type="text/javascript">
+	
+	let val_1 = prompt("Enter first value");
+	let val_2 = prompt("Enter second value");
+	let opration = prompt("Enter operation sign e.g., + -  *  /  % ");	
+	let domElement = document.getElementById('result');
+	let result;
+
+	if(val_1 != "" && val_2 != ""){
+	switch(opration){
+
+			case "+":
+				let sum = Number(val_1) + Number(val_2);
+				if(Number.isInteger(sum)){
+					result = `Sum of ${val_1} and ${val_2} is ${sum}`;
+					domElement.innerHTML = result;
+				}else{
+					result = "Please Enter valid values";
+					domElement.innerHTML = result;
+				}
+
+				break;
+
+			case "-":
+				let subtract = Number(val_1) - Number(val_2);
+				if(Number.isInteger(subtract)){
+					result = `Sum of ${val_1} and ${val_2} is ${subtract}`;
+					domElement.innerHTML = result;
+				}else{
+					result = "Please Enter valid values";
+					domElement.innerHTML = result;
+				}
+
+				break;
+
+			case "*":
+				let multiply = Number(val_1) * Number(val_2);
+				if(Number.isInteger(multiply)){
+					result = `Sum of ${val_1} and ${val_2} is ${multiply}`;
+					domElement.innerHTML = result;
+				}else{
+					result = "Please Enter valid values";
+					domElement.innerHTML = result;
+				}
+
+				break;
+
+			case "/":
+				let divide = Number(val_1) / Number(val_2);
+				if(Number.isInteger(divide)){
+					result = `Sum of ${val_1} and ${val_2} is ${divide}`;
+					domElement.innerHTML = result;
+				}else{
+					result = "Please Enter valid values";
+					domElement.innerHTML = result;
+				}
+
+				break;
+
+			case "%":
+				let modulus = Number(val_1) % Number(val_2);
+				if(Number.isInteger(modulus)){
+					result = `Sum of ${val_1} and ${val_2} is ${modulus}`;
+					domElement.innerHTML = result;
+				}else{
+					result = "Please Enter valid values";
+					domElement.innerHTML = result;
+				}
+
+				break;
+
+			default:
+				result = "Please Enter valid data";
+				domElement.innerHTML = result;
+		}
+	
+	}else{
+
+		result = "Values cannot be empty. Try again";
+		domElement.innerHTML = result;
+	}
+
+</script>
+</html>

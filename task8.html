@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task 8</title>
+</head>
+<body>
+	<p id="result"></p>
+</body>
+<script type="text/javascript">
+	
+	let val_1 = prompt("Add first value");
+	let val_2 = prompt("Add second value");
+	let sum = Number(val_1) + Number(val_2);
+	let result = `Sum of ${val_1} and ${val_2} is ${sum}`;
+	let domElement = document.getElementById('result');
+	domElement.innerHTML = result;
+
+</script>
+</html>
